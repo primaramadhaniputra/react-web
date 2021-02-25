@@ -11,3 +11,399 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* css for navbars */
+nav{
+  position: relative;
+}
+
+nav::after{
+  display: block;
+  content: '';
+  width: 100%;
+  background-image: url('./images/banner-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y:-5rem;
+  height: 175vh;
+  position: absolute;
+  z-index: -99;
+  top: -0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+nav .container{
+  border-radius: 50px;
+  background-color: white;
+  /* position: fixed; */
+  opacity: 0;
+  transition: 2s;
+  /* overflow: hidden; */
+}
+
+.navbar-link{
+  width: 85%
+}
+
+a.nav-link{
+color: black;
+font-size: 13px;
+text-decoration: none;
+transition: all 0.3s;
+}
+a.nav-link:hover{
+color: salmon;
+}
+
+a.nav-link-color{
+  color: salmon;
+}
+
+/* end navbars */
+
+
+
+
+/* css for header */
+.container-header{
+  text-align: center;
+  padding-top: 20rem;
+}
+
+.header-p{
+  font-size: 2rem;
+  color: white;
+}
+
+.header-p span{
+  font-weight: bold;
+}
+
+.header-info{
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.header-btn{
+  font-size: .7rem;
+  background-color: rgb(255, 84, 112);
+  border: none;
+  border-radius: 50px;
+  width: 8.7rem;
+  height: 2.3rem;
+  color: white;
+  transition: 1s;
+}
+
+.header-btn:hover{
+  background-color: rgb(19, 9, 161);
+}
+
+/* end css for header */
+
+/* css for card component */
+.card-header-component{
+  padding-top: 8.3rem;
+  transform: translateY(100px);
+  
+}
+
+.yo .cardus{
+  transition: 1s;
+  transform: translateY(-100px);
+  
+}
+
+.card-header-component img{
+ width: 5rem;
+ height: 5rem;
+ padding: 1rem; 
+ /* border: 1px solid black; */
+ /* border-radius: 50px; */
+ background-color: rgb(123, 80, 221);
+ margin: 0 auto;
+ transition: 0.3s;
+}
+.card:hover{
+  cursor: pointer;
+}
+
+.card .logos{
+  transition: 1s;
+}
+.card:hover .logos{
+  cursor: pointer;
+  background-color: rgb(241, 90, 115);
+}
+
+.card-header-component h5{
+  font-weight: 450;
+  font-size: 1.2rem;
+}
+
+.card-header-component .card{
+  border: none;
+  border-radius: 23px;
+}
+
+.card-header-component p{
+  font-size: .83rem;
+  font-weight: 450;
+}
+
+.card-mini{
+  box-shadow: 4px 4px 0px 4px rgba(186, 156, 235, 0.7);
+}
+
+
+
+/* end css for card component */
+
+/* css for contents */
+
+
+.paraghraph-content-header{
+  font-size: 1.7rem;
+}
+
+.divider-content{
+  margin-top: 5rem;
+}
+
+
+/* end css for contents */
+
+/* css for mini-content */
+
+
+.container-mini-content{
+  background-image: url('./images/work-process-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+}
+.mini-content-header-paraghraph{
+  color: white;
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+
+.mini-content-info-paraghraph{
+  color: rgb(219, 207, 207);
+}
+
+.img-mini{
+  width: 2.5rem;
+}
+.p-mini-content{
+  font-size: 1.2rem;
+  font-weight: 450;
+  color: rgba(56, 54, 54,0.8);
+}
+
+.p-mini-content-info{
+  font-size: .85rem;
+}
+
+.card-mini{
+  transition: all 1s;
+}
+
+.card-mini:hover{
+ transform: translateY(-30px);
+}
+
+
+
+
+
+/* end css for mini-content */
+
+/* css for footer  */
+
+footer{
+  background-color: rgba(225, 212, 233, 0.4);
+  padding-top: 7rem;
+  /* text-align: center; */
+}
+
+footer h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+
+}
+
+.footer-info{
+  font-size: .9rem;
+  font-weight: 350;
+}
+
+.container-input-1{
+  margin-right: 10rem;
+}
+
+.footer-input-header input {
+  width: 19rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+textarea{
+  display: block;
+  height: 7rem;
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.form-btn{
+  display: block;
+  width: 9rem;
+  padding: .7rem;
+  font-size: .8rem;
+  color: rgba(255, 255, 255,1);
+  background-color: rgba(86, 45, 199,0.8);
+  border: none;
+  border-radius: 40px;
+  transition: .3s;
+}
+
+.form-btn:hover{
+  background-color: violet;
+  color: black;
+}
+
+.first-p{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.second-p{
+  font-weight: 350;
+  font-size: .9rem;
+  color: grey;
+}
+
+.header-endfooter{
+  background-color: rgba(222, 127, 252,1);
+}
+
+.container-icon{
+  
+  text-align: center;
+  height: 12rem;
+  background: rgb(222,127,252);
+background: linear-gradient(90deg, rgba(222,127,252,1) 0%, rgba(45,29,193,0.7) 100%);
+}
+
+.icon{
+  /* background-color: red; */
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50px;
+  transition: .3s;
+  
+}
+
+.container-icon > .container > hr{
+  background-color: white;
+}
+
+.container-icon > .container > p {
+  color: white;
+  font-size: .7rem;
+  font-weight: 300;
+}
+
+.icon:hover{ 
+  background-color: salmon;
+  cursor:pointer;
+}
+/* end css for footers */
+
+/* responsive breakpoints */
+
+@media (max-width: 1200px) { 
+  nav::after {
+    background-size: auto;
+    background-position-x: center;
+  }
+ }
+
+@media (max-width: 992px) { 
+  nav::after {
+    background-size: auto;
+    background-position-x: center;
+  }
+  .container-mini-content{
+    height: 100%;
+  }
+  .footer-input-header input{
+    width: 15rem;
+  }
+ 
+ }
+
+@media (max-width: 768px) { 
+  nav::after {
+    background-size: auto;
+    background-position-x: center;
+  }
+  
+  .footer-input-header input{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container-input-1{
+    margin: 1rem auto;
+  }
+  textarea{
+    width: 100%;
+  }
+ }
+
+@media (max-width: 576px) { 
+  /* for navbars */
+  nav::after {
+    background-size: auto;
+    background-position-x: center;
+  }
+  .navbar-link{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-link a::after{
+    position: absolute;
+    display: block;
+    background-color: rgba(107, 104, 104,0.3);
+    content: '';
+    height: 1px;
+    width: 100%;
+    left: 0;
+  }
+  /* end responsive for navbar */
+
+  /* responsive for header */
+
+  .header-p{
+    font-size: 1.7rem;
+  }
+
+  .header-info{
+    font-size: .8rem;
+  }
+
+  .container-mini-content{
+    height: 90rem;
+  }
+  
+ }
